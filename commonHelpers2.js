@@ -1,2 +1,2 @@
-import"./assets/styles-9e1e9b33.js";console.log("world");
+import"./assets/modulepreload-polyfill-3cfb730f.js";import{i as t}from"./assets/vendor-77e16229.js";const i=document.querySelector(".form");i.addEventListener("submit",n);function n(o){o.preventDefault();const s=o.target.elements.delay.value,r=Number(s),m=o.target.state.value;new Promise((e,a)=>{setTimeout(()=>{m==="fulfilled"?e(`✅ Fulfilled promise in ${s}ms`):a(`❌ Rejected promise in ${s}ms`)},r)}).then(e=>t.show({message:e,position:"topRight",backgroundColor:"#59a10d",messageColor:"#fff"})).catch(e=>t.show({message:e,position:"topRight",backgroundColor:"#ef4040",messageColor:"#fff"})),i.reset()}
 //# sourceMappingURL=commonHelpers2.js.map
