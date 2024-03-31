@@ -25,7 +25,9 @@ const fp = flatpickr(input, {
                iziToast.show({
                    message: 'Please choose a date in the future',
                    position: 'topRight',
-               });
+                   backgroundColor: '#ef4040',
+                   messageColor: '#fff',
+                   });
             btnStart.disabled = true;
             } else {
             btnStart.disabled = false;
